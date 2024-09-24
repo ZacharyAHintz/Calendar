@@ -1,0 +1,65 @@
+.fullCalendarContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.weekHeader {
+  display: contents;
+}
+
+.dayHeader {
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  background-color: var(--day-header-background-dark);
+  border: 1px solid var(--day-header-border-dark);
+  color: var(--text-color-dark);
+}
+
+.week {
+  display: contents;
+}
+
+.day {
+  border: 1px solid #ccc;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+}
+
+.dayNumber {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.addEventButton {
+  margin-top: 10px;
+  cursor: pointer;
+  padding: 5px;
+  border: none;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  width: 100%;
+}
+
+@media (prefers-color-scheme: light) {
+  .dayHeader {
+    background-color: var(--day-header-background-light);
+    border: 1px solid var(--day-header-border-light);
+    color: var(--text-color-light);
+  }
+}

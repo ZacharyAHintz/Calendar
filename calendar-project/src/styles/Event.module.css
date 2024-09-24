@@ -1,0 +1,23 @@
+.event {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.button {
+  margin: 2px 0;
+  padding: 2px 5px;
+  font-size: 0.8em;
+  border-radius: 5px;
+  cursor: pointer;
+}
